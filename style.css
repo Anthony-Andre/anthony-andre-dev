@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+  color: #F5F5F5;
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+  background-image: url(/src/mp4/carresRelies.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header{
+  justify-content: center;
+/* background-color: blanchedalmond; */
+  height: 35%;
+  display: flex;
+  flex-direction: column ;
+
+}
+
+#parcours, #realisations, #contact{
+  display: none;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  font-weight: 800;
+  margin: auto;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.nav li{
+}
+
+.nav li:hover{
+  cursor: pointer;
+}
+
+.main {
+  /* background-color: cadetblue; */
+  height: 50%;
+}
+
+.main, footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main div{
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+footer{
+  height: 15%;
+  /* background-color: chocolate; */
+}
+
+/*********************** Onglet Parcours  ***********************/
+
+#parcours{
+  flex-direction: row;
+  gap: 12px;
+  height: 100%;
+  flex-wrap: wrap;
+  padding: 0 10% 0 10%;}
+
+#parcours div{
+  display: flex;
+  align-self: center;
+}
+
+/*********************** Onglet réalisations  ***********************/
+
+#realisations{
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ gap: 5%;
+ padding-left: 5%;
+ padding-right: 5%;
+ align-items: center;
+}
+
+#realisations img{
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+#realisations p{
+  position: absolute;
+  padding-bottom: 2%;
+}
+
+#realisations img:hover{
+  opacity: 75%;
+  transition: opacity 1s;
+}
+
+.illustrationRealisations{
+  justify-content: end;
+  align-items: center;
+}
+
+/*********************** Formulaire de contact  ***********************/
+
+
+
+#formulaireContact{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 10px;
+}
+
+#formulaireContact input, #formulaireContact button{
+  height: 25px;
+}
+
+#formulaireContact input, #formulaireContact textarea, #formulaireContact button{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  color: black;
+  font-weight: 900;
+  border-radius: 25px;
+}
+
+#formulaireContact textarea{
+  padding-top: 5px;
+}
+
+#formulaireContact button{
+  cursor:pointer;
+}
+
+
+/*********************** Media Queries :  ***********************/
+
+/*********************** 790px :  ***********************/
+
+@media screen and (min-width:790px) {
+  .header{
+    height: 20%;
+  }
+
+  .main{
+    height: 70%;
+  }
+
+  footer{
+    height: 10%;
+  }
+}
+
+/*********************** Media Queries :  ***********************/
+
+/*********************** Media Queries :  ***********************/

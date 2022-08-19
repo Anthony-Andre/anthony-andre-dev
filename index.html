@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnthonyAndreDev</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body onload="parcoursMelange()">
+  
+
+<div class="header"> 
+<h1>Anthony André - Concepteur Développeur d'Applications</h1>
+
+<div class="navbar">
+
+<ul class="nav">
+ <li onclick="afficherParcours()">Mon parcours
+ </li>
+  <li>|</li>
+  <li onclick="afficherRealisations()">Mes réalisations</li>
+  <li>|</li>
+  <li onclick="afficherContact()">Me contacter</li>
+</ul>
+
+</div>
+</div> 
+
+<div class="main">
+
+<div id="parcours" onmouseenter="remiseParcoursEnOrdre()" onmouseleave="shuffleParcours()">
+</div>
+
+<div id="realisations">
+
+<div class="illustrationRealisations"><a href=""><img src="/src/img/illustrationTest.jpg" alt="image d'illustration d'ordinateur"></a><p>Nom du site web</p></div>
+<div class="illustrationRealisations"><a href=""><img src="/src/img/illustrationTest.jpg" alt="image d'illustration d'ordinateur"></a><p>Nom du site web</p></div>
+<div class="illustrationRealisations"><a href=""><img src="/src/img/illustrationTest.jpg" alt="image d'illustration d'ordinateur"></a><p>Nom du site web</p></div>
+<div class="illustrationRealisations"><a href=""><img src="/src/img/illustrationTest.jpg" alt="image d'illustration d'ordinateur"></a><p>Nom du site web</p></div>
+<div class="illustrationRealisations"><a href=""><img src="/src/img/illustrationTest.jpg" alt="image d'illustration d'ordinateur"></a><p>Nom du site web</p></div>
+<div class="illustrationRealisations"><a href=""><img src="/src/img/illustrationTest.jpg" alt="image d'illustration d'ordinateur"></a><p>Nom du site web</p></div>
+<div class="illustrationRealisations"><a href=""><img src="/src/img/illustrationTest.jpg" alt="image d'illustration d'ordinateur"></a><p>Nom du site web</p></div>
+<div class="illustrationRealisations"><a href=""><img src="/src/img/illustrationTest.jpg" alt="image d'illustration d'ordinateur"></a><p>Nom du site web</p></div>
+</div>
+
+
+<div id="contact">
+
+<form action="" id="formulaireContact">
+
+  <label for="nom">Votre Nom</label>
+  <input type="text" id="nom" placeholder="Renseignez votre nom ici">
+
+  <label for="prenom">Votre Prénom</label>
+  <input type="text" id="prenom" placeholder="Renseignez votre prénom ici">
+
+  <label for="email">Votre Adresse Mail</label>
+  <input type="email" name="email" id="email" placeholder="Renseignez votre adresse mail ici">
+
+  <label for="message">Votre Message</label>
+  <textarea name="message" id="message" cols="30" rows="10" placeholder="Que souhaitez-vous nous dire?"></textarea>
+
+  <button type="submit">Envoyer mon message</button>
+
+</form>
+
+</div>
+  
+</div>
+
+
+
+<footer>
+
+  <p id="copyright">Tous droits réservés - Anthony André Dev 2022 &copy</p>
+
+</footer>
+
+</body>
+
+
+
+<script src="main.js"></script>
+
+</html>
